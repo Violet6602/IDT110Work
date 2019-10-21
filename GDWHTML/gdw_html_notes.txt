@@ -1,0 +1,18 @@
+Angle Brackets- "<" and ">", used to enclose tags
+Tags- A piece of markup reprensenting an element in a markup language
+Open Tags- Tag that does not have a / and corresponds with a  close tag
+Close Tags- Tag that has a / after the < and shows the end of an element
+HTML Element- Single component on a website made in HTML
+Attribute- Part of an HTML element, changes based on value
+Value-  Assigned to attributes to alter HTML elements
+Assigment Operator- "=", used when assigning values to attributes
+Comment- Put in HTML file to provide info without changing output
+
+Formal Language- Language with a set of rules and words that can make well-formed sentances
+Syntax- Set of rules that define how a program functions based on the lines and symbols in it.
+Markup Language- Language that used tags to define elements
+
+Block-level Element- Mark up a large section of text.
+Inline Element- Marks up a smaller sectiong of text, usually just a line.
+Object Element- Element that produces an object.
+Special Characters- Ways to use "<", ">", and "&" in text without using them for their other purpose.
