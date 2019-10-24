@@ -3,13 +3,52 @@
 <head>
 <meta charset="utf-8">
 <title>Block-level Elements</title>
+<style>
+body {
+    margin: 40px;
+    paddin: 40px;
+    background-color: #BE5;
+    border: 2px dashed #573;
+}
+h1, footer{
+    text-align: center;
+} 
+p, pre {
+    margin-left: 15px;
+}
+.first{
+    background-color: #FF9;
+    border: 2px dotted #000;
+}
+.second {
+    background-color: #CF9;
+    border: 2px dotted #880;
+}
+#first {
+    color: #373;
+}
+#second {
+    color: #040
+}
+a:link, a:visited {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: #FF0;
+}
+a:activate {
+    font-size: xx-large;
+}
+</style>
 </head>
 <body>
 
 <h1>Block-level Elements</h1>
 
-<h2>Text in a Preformatted Element</h2>
-<pre>This             text
+<h2 id="first">Text in a Preformatted Element</h2>
+<pre class="first">This             text
 
         spans              several
    lines
@@ -20,7 +59,7 @@
 whitespace.
 </pre>
 <p>The white space is kept and the words are all spread out.</p>
-<h2>Same Text in a Paragraph Element</h2>
+<h2 id="second">Same Text in a Paragraph Element</h2>
 <p>This             text
 
         spans              several
@@ -32,7 +71,7 @@ whitespace.
 whitespace.
 </p>   
 <p>The whitespace is not kept and the words are on a single line.</p>
-<div>
+<div class="second">
 <p>
 Somebody once told me that the world was going to roll me. I ain't the sharpest tool in the shed. She was looking kind of dumb with her finger and her thumb in the shape of an L on her forehead.</p>
 <p>
