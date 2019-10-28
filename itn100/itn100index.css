@@ -1,0 +1,13 @@
+body {
+    background-color: #7d87ad;
+}
+h2, li {
+    color: #f2ff00;
+}
+footer {
+    text-align: center;
+}
+a, a:visited{
+    color: #0037cf;
+    text-decoration: none;
+}
