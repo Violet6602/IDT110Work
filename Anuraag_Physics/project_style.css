@@ -9,3 +9,17 @@ img{
 body{
     background-color: #3d3d3d;
 }
+nav {
+    background-color: #132e9c;
+    height: 100px;
+}
+a, a:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+nav >  a{
+    padding: 50px;
+    border-style: solid;
+    border-size: 1px;
+    border-color: #000000;
+}
