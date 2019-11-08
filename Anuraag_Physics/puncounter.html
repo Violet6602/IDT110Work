@@ -4,7 +4,46 @@
 <meta charset="utf-8">
 <title>Pun Counter</title>
 <style>
-@import url(project_style.css)
+h1, footer{
+    text-align: center;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background-color: #3d3d3d;
+}
+a, a:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+td, th{
+     border: 1px solid #000;
+     padding: 5px;
+}
+th {
+     background-color: #666666;
+}
+#first{
+     background-color: #d4af37;
+}
+#second{
+     background-color: #aaa9ad;
+}
+#third{
+     background-color: #cd7f32;
+}
+.loser{
+     background-color: #999900;
+}
+
+
 </style>
 </head>
 <body>
@@ -12,20 +51,20 @@
 <h1>Pun Counter</h1>
 <hr>
 <img src="PhysicsPictures/IMG_0320.jpeg" alt="Pun Counter">
-<hr>
 <table>
   <tr><th colspan="3">Pun Counter Scores</th></tr>
   <tr><th>Block</th><th>Puns</th><th>Placement</th></tr>
-  <tr><td>B</td><td>57</td><td>4th</td></tr>
-  <tr><td>C</td><td>10</td><td>7th</td></tr>
-  <tr><td>D</td><td>137</td><td>3rd</td></tr>
-  <tr><td>E</td><td>26</td><td>9th</td></tr>
-  <tr><td>F</td><td>3</td><td>8th</td></tr>
-  <tr><td>H</td><td>246</td><td>1st</td></tr>
-  <tr><td>TA</td><td>32</td><td>5th</td></tr>
-  <tr><td>Lunch</td><td>155</td><td>2nd</td></tr>
-  <tr><td>After School</td><td>20</td><td>6th</td></tr>
+  <tr class="loser"><td>B</td><td>57</td><td>4th</td></tr>
+  <tr class="loser"><td>C</td><td>10</td><td>7th</td></tr>
+  <tr id="third"><td>D</td><td>137</td><td>3rd</td></tr>
+  <tr class="loser"><td>E</td><td>26</td><td>9th</td></tr>
+  <tr class="loser"><td>F</td><td>3</td><td>8th</td></tr>
+  <tr id="first"><td>H</td><td>246</td><td>1st</td></tr>
+  <tr class="loser"><td>TA</td><td>32</td><td>5th</td></tr>
+  <tr id="second"><td>Lunch</td><td>155</td><td>2nd</td></tr>
+  <tr class="loser"><td>After School</td><td>20</td><td>6th</td></tr>
 </table>
+<hr>
 <footer style="text-align: center;">
 <a href="http://validator.w3.org/check?uri=https://violet6602.github.io/IDT110Work/Anuraag_Physics/puncounter.html">
 <strong> HTML </strong> Valid! </a> |
