@@ -18,8 +18,13 @@ a, a:visited{
     text-decoration: none;
 }
 nav >  a{
-    padding: 50px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
     border-style: solid;
     border-size: 1px;
     border-color: #000000;
 }
+
