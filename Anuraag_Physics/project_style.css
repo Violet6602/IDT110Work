@@ -1,6 +1,9 @@
 h1, nav, footer{
     text-align: center;
 }
+h1, h3 {
+    color: #990000;
+}
 img{
     display: block;
     margin-left: auto;
@@ -10,12 +13,14 @@ body{
     background-color: #3d3d3d;
 }
 nav {
-    background-color: #132e9c;
+    background-color: #000099;
     height: 100px;
 }
 a, a:visited{
     color: #FFFFFF;
     text-decoration: none;
+    background-color: #000099;
+    border: 1px solid #000000;
 }
 nav >  a{
     padding-top: 33px;
@@ -23,8 +28,6 @@ nav >  a{
     padding-left: 50px;
     padding-right: 50px;
     font-size: 25px;
-    border-style: solid;
-    border-size: 1px;
-    border-color: #000000;
+    border-width: 3px;
 }
 
