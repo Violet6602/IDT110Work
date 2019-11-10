@@ -1,8 +1,15 @@
 h1, nav, footer{
     text-align: center;
 }
-h1, h3 {
+h1, h2, h3 {
     color: #990000;
+}
+div strong{
+    color: #990000;
+    font-size: 20px;
+}
+h2, div {
+    text-align: center;
 }
 img{
     display: block;
