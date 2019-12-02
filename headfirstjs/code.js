@@ -6,7 +6,7 @@ while (count > 0) {
     console.log("Take one down, pass it around");
     count = count - 1;
     if (count > 0) {
-        if (count = 1) {
+        if (count == 1) {
             word = "bottle";
         }
         console.log(count + " " + word + " of beer on the wall.");
