@@ -11,7 +11,7 @@
   --page-width: 8.5in;
   --page-height: 11in;
   --main-width: 6.4in;
-  --sidebar-width: calc(var(--page-width) - var(--main-width));
+  --sidebar-width: 2.1in;
   --decorator-horizontal-margin: 0.2in;
 
   --sidebar-horizontal-padding: 0.2in;
