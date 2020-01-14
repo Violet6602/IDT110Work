@@ -1,14 +1,14 @@
-@page{
+@page {
   size: letter portrait;
   margin: 0;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-:root{
-  --page-width: 8.5in;
+:root {
+  --page-width: 8.5in; 
   --page-height: 11in;
   --main-width: 6.4in;
   --sidebar-width: 2.1in;
@@ -20,7 +20,7 @@
   --decorator-outer-offset-top: 10px;
   --decorator-outer-offset-left: -5.5px;
   --decorator-border-width: 1px;
-  --decorator-outer-dim: 9px;
+  --decorator-outer-dim: 9px;  
   --decorator-border: 1px solid #ccc;
 
   --row-blocks-padding-top: 5pt;
@@ -29,7 +29,7 @@
   --main-blocks-title-icon-offset-left: -19pt;
 }
 
-body{
+body {
   width: var(--page-width);
   height: var(--page-height);
   margin: 0;
@@ -40,23 +40,23 @@ body{
   hyphens: auto;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
   margin: 0;
   color: #000;
 }
 
-li{
+li {
   list-style-type: none;
 }
 
-#main{
+#main {
   float: left;
   width: var(--main-width);
   padding: 0.25in 0.25in 0 0.25in;
   font-size: 7pt;
 }
 
-#sidebar{
+#sidebar {
   float: right;
   position: relative; /* for disclaimer */
   width: var(--sidebar-width);
@@ -69,39 +69,39 @@ li{
 /* main */
 
 /** big title **/
-#title, h1, h2{
+#title, h1, h2 {
   text-transform: uppercase;
 }
 
-#title{
+#title {
   position: relative;
   left: 0.55in;
   margin-bottom: 0.3in;
   line-height: 1.2;
 }
 
-#title h1{
+#title h1 {
   font-weight: 300;
   font-size: 18pt;
   line-height: 1.5;
 }
 
-#title h1 strong{
+#title h1 strong {
   margin: auto 2pt auto 4pt;
   font-weight: 600;
 }
 
-.subtitle{
+.subtitle {
   font-size: 8pt;
 }
 
 /*** categorial blocks ***/
 
-.main-block{
+.main-block {
   margin-top: 0.1in;
 }
 
-#main h2{
+#main h2 {
   position: relative;
   top: var(--row-blocks-padding-top);
   /* XXX: 0.5px for aligning fx printing */
@@ -111,7 +111,7 @@ li{
   color: #555;
 }
 
-#main h2 > i{
+#main h2 > i {
   /* use absolute position to prevent icon's width from misaligning title */
   /* assigning a fixed width here is no better due to needing to align decorator
      line too */
@@ -121,7 +121,7 @@ li{
   color: #444;
 }
 
-#main h2::after{ /* extends the decorator line */
+#main h2::after { /* extends the decorator line */
   height: calc(var(--row-blocks-padding-top) * 2);
   position: relative;
   top: calc(-1 * var(--row-blocks-padding-top));
@@ -136,27 +136,27 @@ li{
 }
 
 /**** minor tweaks on the icon fonts ****/
-#main h2 > .fa-graduation-cap{
+#main h2 > .fa-graduation-cap {
   left: calc(var(--main-blocks-title-icon-offset-left) - 2pt);
   top: 2pt;
 }
 
-#main h2 > .fa-suitcase{
+#main h2 > .fa-suitcase {
   top: 1pt;
 }
 
-#main h2 > .fa-folder-open{
+#main h2 > .fa-folder-open {
   top: 1.5pt;
 }
 
 /**** individual row blocks (date - decorator - details) ****/
 
-.blocks{
+.blocks {
   display: flex;
   flex-flow: row nowrap;
 }
 
-.blocks > div{
+.blocks > div {
   padding-top: var(--row-blocks-padding-top);
 }
 
