@@ -54,7 +54,7 @@ nav {
 #img-rotate{
 -ms-transform: rotate(345deg);
 -webkit-transform: rotate(345deg);
-transform: rotate(345);
+transform: rotate(345deg);
 }
 
 #logo-rotate{
