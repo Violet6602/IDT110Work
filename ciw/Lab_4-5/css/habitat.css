@@ -35,7 +35,7 @@ footer {
   padding: 0;
 }
 
-h1 {
+h2 {
   text-shadow: 3px 3px 3px #888888;
   margin-top: 5px; 
   margin-bottom: 0px; 
@@ -156,7 +156,7 @@ section {
 }
 
 .sub-menu li {
-  list-style-type: none:
+  list-style-type: none;
   display: block;
   border: 2px solid #add8e6;
   padding: 2px 5px;
