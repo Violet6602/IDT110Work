@@ -6,6 +6,21 @@
 </head>
 <body>
 
+<script>
+function secChange(){
+document.getElementById("ti").innerHTML = (parseInt(document.getElementById("ti").innerHTML)-1).toString();
+}
+function timerStart(){
+document.getElementById("ti").innerHTML = "30";
+window.setInterval(secChange(), 1000);
+}
+</script>
+
+<h2 id="ti">Click the Button!</h2>
+<button onclick="timerStart()"> Click Here!</button>
+
+
+<br>
 <footer>
 <a href="http://validator.w3.org/check?uri=https://violet6602.github.io/IDT110Work/timer/timer.html">
 <strong> html </strong> valid! </a> |
