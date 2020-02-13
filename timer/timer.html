@@ -7,17 +7,25 @@
 <body>
 
 <script>
-function secChange(){
-document.getElementById("ti").innerHTML = (parseInt(document.getElementById("ti").innerHTML)-1).toString();
-}
+
 function timerStart(){
+document.getElementById("bu").parentNode.removeChild(document.getElementById("bu"));
 document.getElementById("ti").innerHTML = "30";
-window.setInterval(secChange(), 1000);
+var timeVar = window.setInterval(function () {
+  document.getElementById("ti").innerHTML = (parseInt(document.getElementById("ti").innerHTML)-1).toString();
+  document.getElementById("bar").style.width = (parseFloat(document.getElementById("bar").style.width) + 3.33) + "vw" ;
+
+  if (document.getElementById("ti").innerHTML == "0"){
+  clearInterval(timeVar);
+    }
+}, 1000);
+
 }
 </script>
 
 <h2 id="ti">Click the Button!</h2>
-<button onclick="timerStart()"> Click Here!</button>
+<p id="bar" style="height:100px;width:0.0vw;background-color:#555;"></p>
+<button id="bu"  onclick="timerStart()"> Click Here!</button>
 
 
 <br>
