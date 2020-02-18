@@ -6,6 +6,16 @@
 <style>
 .button-grid{
   display: inline-grid;
+  margin-left: 3.5vw;
+  margin-right: 3.5vw;
+  grid-template-columns: 30vw 30vw 30vw;
+  grid-template-rows: auto;
+  grid-gap: 1vw;
+}
+.bu{
+  border-radius: 0.5vw;
+  font-size: 3vw;
+  border-size: 1 vw;
 }
 #b10{
   grid-area: 1 / 1 / 2 / 2;
@@ -25,6 +35,17 @@
 #b300{
   grid-area: 2 / 3 / 3 / 4;
 }
+#bar{
+  margin-left: 5vw;
+  margin-right: 5vw;
+  height: 50vh;
+  width 0.0vw;
+  background-color: #0D7ADF;
+  display: none;
+}
+h2 {
+  text-align: center;
+}
 
 </style>
 
@@ -41,9 +62,10 @@ for (i = 0; i < x.length; i++) {
 }
 document.getElementById("ti").innerHTML = time.toString();
 document.getElementById("bar").style.width = 0.0;
+document.getElementById("bar").style.display = "block";
 var timeVar = window.setInterval(function () {
   document.getElementById("ti").innerHTML = (parseInt(document.getElementById("ti").innerHTML)-1).toString();
-  document.getElementById("bar").style.width = (parseFloat(document.getElementById("bar").style.width) + (100/time)) + "vw" ;
+  document.getElementById("bar").style.width = (parseFloat(document.getElementById("bar").style.width) + (90/time)) + "vw" ;
 
   if (document.getElementById("ti").innerHTML == "0"){
     clearInterval(timeVar);
@@ -59,7 +81,7 @@ var timeVar = window.setInterval(function () {
 </script>
 
 <h2 id="ti">Click a Button!</h2>
-<p id="bar" style="height:100px;width:0.0vw;background-color:#0D7ADF;"></p>
+<p id="bar"></p>
 
 <div class="button-grid">
   <button id="b15" class="bu"  onclick="timerStart(15)">15 Seconds</button>
