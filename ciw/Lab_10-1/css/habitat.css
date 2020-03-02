@@ -1,12 +1,5 @@
 /* STYLE SHEET FOR INDEX.HTM */
 
-
-@font-face
-{
-font-family: oregonfont;
-src: url('oregon book.ttf');
-}
-
 article 	
 {	
 padding:10px;
@@ -14,7 +7,6 @@ padding:10px;
 
 body 
 {
-font-family:oregonfont;
 font-size: 85%;
 border-style:solid;
 border-width:5px;
@@ -35,7 +27,6 @@ padding:0;
 
 h1
 {
-text-shadow: 3px 3px 3px #888888;
 margin-top: 5px; 
 margin-bottom: 0px; 
 }
@@ -73,7 +64,6 @@ padding:2px 5px;
 background:#add8e6;
 border-radius:5px;
 text-decoration:none;
-box-shadow:5px 5px 5px #888888;
 font-weight:bold;
 }
 
@@ -84,7 +74,7 @@ text-align:right;
 
 #drop-menu 
 {
-width: 150px;
+width: 20px;
 cursor: pointer;
 display:block;
 border:2px solid #a1a1a1;
@@ -93,8 +83,6 @@ height: 20px;
 max-height: 20px; 
 background:#add8e6;
 border-radius:5px;
-box-shadow:5px 5px 5px #888888;
-font-family:oregonfont;
 font-weight:bold;
 font-size:85%;
 color:#0000A0;
@@ -123,10 +111,6 @@ display: none;
 width: 150px;
 padding: 5px 5px;
 border-radius:5px;
-box-shadow:5px 5px 5px #888888;
--webkit-box-shadow: 5px 5px 5px rgba(0,0,0, 0.2);
--moz-box-shadow: 5px 5px 5px rgba(0,0,0, 0.2);
-box-shadow: 5px 5px 5px rgba(0,0,0, 0.2);
 }
 	
 .sub-menu li
